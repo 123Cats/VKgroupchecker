@@ -16,7 +16,7 @@ def vkparser(url = 'https://vk.com/mgame'):
 			if 'Series X' in topic and topic not in checked_news:
 				print(f'///Какая-то новая инфа про коробоксы в группе:///\n {topic}')
 				print('Направляю email о новой информации...')
-				send_email('nilov1235@mail.ru', 'XBOX', topic)
+				send_email('email@here', 'XBOX', topic)
 				checked_news.append(topic)
 			else:
 				print('Нет упоминания xbox в темах на странице или уведомление уже отправлено')
